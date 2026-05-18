@@ -1,16 +1,52 @@
-# React + Vite
+# 🖐️ Deteksi Gestur 5 Jari AI — Backpropagation from Scratch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi web interaktif berbasis Artificial Intelligence (AI) untuk mendeteksi gestur 5 jari secara *real-time* menggunakan kamera. Proyek ini dibangun murni menggunakan algoritma **Neural Network Backpropagation dari nol (tanpa framework ML seperti TensorFlow/PyTorch)** untuk proses *training*-nya, lalu di-porting ke ekosistem Web modern.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [GANTI_DENGAN_LINK_VERCEL_KAMU](https://deteksi-jari-ai.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Fitur Utama
+* **Custom Neural Network:** Otak AI dilatih menggunakan algoritma Backpropagation murni (NumPy) dengan *custom dataset* sebanyak 3.700+ baris data.
+* **Real-time Tracking:** Ekstraksi 21 titik koordinat (*landmarks*) tangan secara instan menggunakan **MediaPipe Hands**.
+* **Cross-Platform Web App:** Responsif dan bisa diakses langsung melalui *browser* laptop maupun HP (Android & iOS).
+* **Modern UI/UX:** Tampilan antarmuka yang futuristik dan bersih menggunakan **React.js** dan **Tailwind CSS**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Machine Learning & Data Engineering (Python)
+* Python 3
+* NumPy (Matriks & Aljabar Linear)
+* Pandas (Manajemen Dataset)
+* Matplotlib (Visualisasi Loss Curve)
+
+### Web Deployment (JavaScript)
+* React.js (Vite)
+* Tailwind CSS
+* MediaPipe Hands SDK (Web Version)
+* Vercel (Cloud Hosting)
+
+---
+
+## 📊 Proses Pengembangan Model
+
+1. **Pengumpulan Data:** Memanen koordinat $X$ dan $Y$ dari 21 titik jari tangan melalui kamera laptop menjadi file `dataset_tangan.csv`.
+2. **Retraining & Optimization:** Mengacak dataset (*shuffling*) dan melatih model jaringan saraf tiruan hingga mencapai *Loss Sweet Spot* sebesar **0.0829** (Akurasi ~91%).
+3. **Export JSON:** Mengonversi matriks bobot (*weights*) dan bias dari format `.npy` menjadi `.json` agar bisa dibaca oleh JavaScript secara *native*.
+
+---
+
+## 💻 Cara Menjalankan Proyek di Lokal
+
+### 1. Kloning Repositori
+```bash
+git clone [https://github.com/USERNAME_KAMU/deteksi-jari-web.git](https://github.com/USERNAME_KAMU/deteksi-jari-web.git)
+cd deteksi-jari-web
+
+npm install
+
+npm run dev
+
+Buka http://localhost:5173 di browser kamu untuk mencoba!
