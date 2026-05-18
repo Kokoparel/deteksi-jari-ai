@@ -2,7 +2,7 @@
 
 Aplikasi web interaktif berbasis Artificial Intelligence (AI) untuk mendeteksi gestur 5 jari secara *real-time* menggunakan kamera. Proyek ini dibangun murni menggunakan algoritma **Neural Network Backpropagation dari nol (tanpa framework ML seperti TensorFlow/PyTorch)** untuk proses *training*-nya, lalu di-porting ke ekosistem Web modern.
 
-🌐 **Live Demo:** [GANTI_DENGAN_LINK_VERCEL_KAMU](https://deteksi-jari-ai.vercel.app)
+🌐 **Live Demo:** [https://deteksi-jari-ai.vercel.app](https://deteksi-jari-ai.vercel.app)
 
 ---
 
