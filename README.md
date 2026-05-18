@@ -42,11 +42,15 @@ Aplikasi web interaktif berbasis Artificial Intelligence (AI) untuk mendeteksi g
 
 ### 1. Kloning Repositori
 ```bash
-git clone [https://github.com/USERNAME_KAMU/deteksi-jari-web.git](https://github.com/USERNAME_KAMU/deteksi-jari-web.git)
-cd deteksi-jari-web
-
+git clone [https://github.com/kokoparel/deteksi-jari-ai.git](https://github.com/kokoparel/deteksi-jari-ai.git)
+cd deteksi-jari-ai
+```
+```bash
 npm install
-
+```
+```bash
 npm run dev
-
+```
+```bash
 Buka http://localhost:5173 di browser kamu untuk mencoba!
+```
